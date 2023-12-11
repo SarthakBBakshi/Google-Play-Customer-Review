@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 
 
-def plotColumnwiseCount(c1='',c2='',data):
+def plotColumnwiseCount(c1,c2,data):
     plt.figure(figsize = (15,15))
     plt.subplot(3,2,1)
     sns.countplot(x = c1, hue = c2, palette = 'Set2', data = data.toPandas())
